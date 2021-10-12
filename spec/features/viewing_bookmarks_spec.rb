@@ -5,7 +5,7 @@ feature 'Viewing bookmarks' do
   end
 
   scenario 'shows a list of bookmarks' do
-    bookmarks = ["http://www.google.com", "http://www.makersacademy.com", "http://www.destroyallsoftware.com"]
+    bookmarks = ["http://www.makersacademy.com/", "http://www.google.com/", "http://www.destroyallsoftware.com"]
     visit('/bookmarks')
     expect(page).to have_content(bookmarks.join(' '))
   end
