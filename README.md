@@ -1,9 +1,13 @@
 ```
 As a user,
-So that I can remember the sites I want to go back to,
+So that I can see the sites I want to go back to,
 I'd like to see a list of sites I have bookmarked.
 ```
-
+```
+As a user,
+So that I can remember a site I want to go back to,
+I'd like to add it to a list
+```
 
 
 ![Installation](user_story_1.drawio.svg)

@@ -11,9 +11,12 @@ class BookmarkManager < Sinatra::Base
     erb :index
   end
 
-  get "/bookmarks" do
-    p ENV
+  post "/submit" do
+    Bookmark.create(params[:url])
+    redirect('/bookmarks')
+  end
 
+  get "/bookmarks" do
     @bookmarks = Bookmark.all
     erb :'bookmarks/index'
   end
