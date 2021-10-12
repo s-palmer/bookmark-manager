@@ -2,13 +2,10 @@ source "https://rubygems.org"
 
 ruby "3.0.0"
 
+gem "pg"
 gem "sinatra"
 gem "sinatra-contrib"
-gem "capybara"
-gem "thin"
-gem "puma"
-gem "reel"
-gem "http"
+gem "capybara", group: :test
 gem "webrick"
 #gem 'launchy'
 

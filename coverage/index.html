@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2021-10-11T16:10:28+01:00">2021-10-11T16:10:28+01:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2021-10-12T15:12:51+01:00">2021-10-12T15:12:51+01:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -30,7 +30,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.17
+         2.0
        </span>
     </span> hits/line
     )
@@ -43,8 +43,8 @@
   </div>
 
   <div class="t-line-summary">
-    <b>18</b> relevant lines,
-    <span class="green"><b>18</b> lines covered</span> and
+    <b>21</b> relevant lines,
+    <span class="green"><b>21</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed. </span>
     (<span class="green">
   100.0%
@@ -71,18 +71,18 @@
       <tbody>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#6cecabd85d90cdefbdfcc878b21732acd40def13" class="src_link" title="lib/bookmark.rb">lib/bookmark.rb</a></td>
+            <td class="strong t-file__name"><a href="#b971d8e593ab54bca340934baca83cd7f6f39993" class="src_link" title="lib/bookmark.rb">lib/bookmark.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
             <td class="cell--number">9</td>
-            <td class="cell--number">3</td>
-            <td class="cell--number">3</td>
+            <td class="cell--number">6</td>
+            <td class="cell--number">6</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">2.00</td>
+            <td class="cell--number">4.50</td>
             
           </tr>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#6513b92631b54560bec26bad8abda01058f9dbb9" class="src_link" title="spec/bookmark_spec.rb">spec/bookmark_spec.rb</a></td>
+            <td class="strong t-file__name"><a href="#0c3fc22ab8e3179a05703c31015de286079386d7" class="src_link" title="spec/bookmark_spec.rb">spec/bookmark_spec.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
             <td class="cell--number">11</td>
             <td class="cell--number">7</td>
@@ -93,7 +93,7 @@
           </tr>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#1f1c95dd2af83ceaee24867f64a23a02b0afdeef" class="src_link" title="spec/features/viewing_bookmarks_spec.rb">spec/features/viewing_bookmarks_spec.rb</a></td>
+            <td class="strong t-file__name"><a href="#b5e2e8cf9279c11bc699dc00a890a9b7d8dea4c8" class="src_link" title="spec/features/viewing_bookmarks_spec.rb">spec/features/viewing_bookmarks_spec.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
             <td class="cell--number">12</td>
             <td class="cell--number">8</td>
@@ -120,7 +120,7 @@
 
       <div class="source_files">
       
-        <div class="source_table" id="6cecabd85d90cdefbdfcc878b21732acd40def13">
+        <div class="source_table" id="b971d8e593ab54bca340934baca83cd7f6f39993">
   <div class="header">
     <h3>lib/bookmark.rb</h3>
     <h4>
@@ -134,8 +134,8 @@
     
 
     <div class="t-line-summary">
-      <b>3</b> relevant lines.
-      <span class="green"><b>3</b> lines covered</span> and
+      <b>6</b> relevant lines.
+      <span class="green"><b>6</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -153,12 +153,34 @@
 
             
 
+            <code class="ruby">require &#39;pg&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="2">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="3">
+            <span class="hits">1</span>
+            
+
+            
+
             <code class="ruby">class Bookmark</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="2">
+          <li class="covered" data-hits="1" data-linenumber="4">
             <span class="hits">1</span>
             
 
@@ -169,57 +191,35 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="3">
-            
-            
-
-            
-
-            <code class="ruby">    [</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="4" data-linenumber="4">
+          <li class="covered" data-hits="4" data-linenumber="5">
             <span class="hits">4</span>
             
 
             
 
-            <code class="ruby">      &quot;Website1&quot;,</code>
+            <code class="ruby">    connection = PG.connect(dbname: &#39;bookmark_manager&#39;)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="5">
-            
-            
-
+          <li class="covered" data-hits="4" data-linenumber="6">
+            <span class="hits">4</span>
             
 
-            <code class="ruby">      &quot;Website2&quot;,</code>
+            
+
+            <code class="ruby">    result = connection.exec(&quot;SELECT * FROM bookmarks;&quot;)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="6">
-            
-            
-
-            
-
-            <code class="ruby">      &quot;Website3&quot;,</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="7">
-            
+          <li class="covered" data-hits="16" data-linenumber="7">
+            <span class="hits">16</span>
             
 
             
 
-            <code class="ruby">    ]</code>
+            <code class="ruby">    result.map { |bookmark| bookmark[&#39;url&#39;] }</code>
           </li>
         </div>
       
@@ -250,7 +250,7 @@
 </div>
 
       
-        <div class="source_table" id="6513b92631b54560bec26bad8abda01058f9dbb9">
+        <div class="source_table" id="0c3fc22ab8e3179a05703c31015de286079386d7">
   <div class="header">
     <h3>spec/bookmark_spec.rb</h3>
     <h4>
@@ -338,7 +338,7 @@
 
             
 
-            <code class="ruby">      expect(Bookmark.all).to include(&quot;Website1&quot;)</code>
+            <code class="ruby">      expect(Bookmark.all).to include(&quot;http://www.makersacademy.com&quot;)</code>
           </li>
         </div>
       
@@ -349,7 +349,7 @@
 
             
 
-            <code class="ruby">      expect(Bookmark.all).to include(&quot;Website2&quot;)</code>
+            <code class="ruby">      expect(Bookmark.all).to include(&quot;http://www.google.com&quot;)</code>
           </li>
         </div>
       
@@ -360,7 +360,7 @@
 
             
 
-            <code class="ruby">      expect(Bookmark.all).to include(&quot;Website3&quot;)</code>
+            <code class="ruby">      expect(Bookmark.all).to include(&quot;http://www.destroyallsoftware.com&quot;)</code>
           </li>
         </div>
       
@@ -402,7 +402,7 @@
 </div>
 
       
-        <div class="source_table" id="1f1c95dd2af83ceaee24867f64a23a02b0afdeef">
+        <div class="source_table" id="b5e2e8cf9279c11bc699dc00a890a9b7d8dea4c8">
   <div class="header">
     <h3>spec/features/viewing_bookmarks_spec.rb</h3>
     <h4>
@@ -512,7 +512,7 @@
 
             
 
-            <code class="ruby">    bookmarks = [&quot;Website1&quot;, &quot;Website2&quot;, &quot;Website3&quot;]</code>
+            <code class="ruby">    bookmarks = [&quot;http://www.google.com&quot;, &quot;http://www.makersacademy.com&quot;, &quot;http://www.destroyallsoftware.com&quot;]</code>
           </li>
         </div>
       
