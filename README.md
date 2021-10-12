@@ -15,6 +15,9 @@ I'd like to see a list of sites I have bookmarked.
 - \c bookmark_manager;
 - inside db/migrations, enter the query
 - \q to exit postgresql
+- CREATE DATABASE "bookmark_manager_test";
+- CREATE TABLE bookmarks(id SERIAL PRIMARY KEY, url VARCHAR(60));
+- run psql for both databases
 
 
 The website will have the following specification:
@@ -27,3 +30,4 @@ Comment on bookmarks
 Tag bookmarks into categories
 Filter bookmarks by tag
 Users are restricted to manage only their own bookmarks
+
