@@ -35,3 +35,5 @@ Tag bookmarks into categories
 Filter bookmarks by tag
 Users are restricted to manage only their own bookmarks
 
+## Sample SQL Injection Code
+"Google' ); DROP TABLE bookmarks; --' )"
