@@ -16,5 +16,20 @@ describe Bookmark do
       expect(bookmarks).to include('Google')
     end
   end
+
+    it 'returns a list of bookmarks' do
+
+      bookmark = Bookmark.create('http://www.makersacademy.com', 'Makers')
+      Bookmark.create('http://www.destroyallsoftware.com', 'Destroy')
+      Bookmark.create('http://www.google.com', 'Google')
+
+      bookmarks = Bookmark.all
+
+      expect(bookmarks.length).to eq 3
+      expect(bookmarks.first.id).to eq bookmark.id
+      expect(bookmarks.first.title).to eq 'Makers'
+      expect(bookmarks.first.url).to eq 'http://www.makersacademy.com'
+  end
+
 end
 
