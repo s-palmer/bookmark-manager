@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2021-10-12T17:18:17+01:00">2021-10-12T17:18:17+01:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2021-10-13T14:37:00+01:00">2021-10-13T14:37:00+01:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -43,8 +43,8 @@
   </div>
 
   <div class="t-line-summary">
-    <b>28</b> relevant lines,
-    <span class="green"><b>28</b> lines covered</span> and
+    <b>29</b> relevant lines,
+    <span class="green"><b>29</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed. </span>
     (<span class="green">
   100.0%
@@ -84,9 +84,9 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#8d78ede9f273c7a29bdd646757a3ded03a1f04d1" class="src_link" title="spec/features/adding_bookmarks_spec.rb">spec/features/adding_bookmarks_spec.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">10</td>
-            <td class="cell--number">6</td>
-            <td class="cell--number">6</td>
+            <td class="cell--number">11</td>
+            <td class="cell--number">7</td>
+            <td class="cell--number">7</td>
             <td class="cell--number">0</td>
             <td class="cell--number">1.00</td>
             
@@ -95,7 +95,7 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#0996738345f37ea45b0559c4937b888de16d5cca" class="src_link" title="spec/features/viewing_bookmarks_spec.rb">spec/features/viewing_bookmarks_spec.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">15</td>
+            <td class="cell--number">19</td>
             <td class="cell--number">10</td>
             <td class="cell--number">10</td>
             <td class="cell--number">0</td>
@@ -230,7 +230,7 @@
 
             
 
-            <code class="ruby">      connection.exec(&quot;INSERT INTO bookmarks (url) VALUES (&#39;http://www.makersacademy.com&#39;);&quot;)</code>
+            <code class="ruby">      connection.exec(&quot;INSERT INTO bookmarks(url, title) VALUES(&#39;http://www.makersacademy.com&#39;, &#39;Makers&#39;);&quot;)</code>
           </li>
         </div>
       
@@ -241,7 +241,7 @@
 
             
 
-            <code class="ruby">      connection.exec(&quot;INSERT INTO bookmarks (url) VALUES(&#39;http://www.destroyallsoftware.com&#39;);&quot;)</code>
+            <code class="ruby">      connection.exec(&quot;INSERT INTO bookmarks(url, title) VALUES(&#39;http://www.destroyallsoftware.com&#39;, &#39;Destroy&#39;);&quot;)</code>
           </li>
         </div>
       
@@ -252,7 +252,7 @@
 
             
 
-            <code class="ruby">      connection.exec(&quot;INSERT INTO bookmarks (url) VALUES(&#39;http://www.google.com&#39;);&quot;)</code>
+            <code class="ruby">      connection.exec(&quot;INSERT INTO bookmarks(url, title) VALUES(&#39;http://www.google.com&#39;, &#39;Google&#39;);&quot;)</code>
           </li>
         </div>
       
@@ -296,7 +296,7 @@
 
             
 
-            <code class="ruby">      expect(bookmarks).to include(&#39;http://www.makersacademy.com&#39;)</code>
+            <code class="ruby">      expect(bookmarks).to include(&#39;Makers&#39;)</code>
           </li>
         </div>
       
@@ -307,7 +307,7 @@
 
             
 
-            <code class="ruby">      expect(bookmarks).to include(&#39;http://www.destroyallsoftware.com&#39;)</code>
+            <code class="ruby">      expect(bookmarks).to include(&#39;Destroy&#39;)</code>
           </li>
         </div>
       
@@ -318,7 +318,7 @@
 
             
 
-            <code class="ruby">      expect(bookmarks).to include(&#39;http://www.google.com&#39;)</code>
+            <code class="ruby">      expect(bookmarks).to include(&#39;Google&#39;)</code>
           </li>
         </div>
       
@@ -385,8 +385,8 @@
     
 
     <div class="t-line-summary">
-      <b>6</b> relevant lines.
-      <span class="green"><b>6</b> lines covered</span> and
+      <b>7</b> relevant lines.
+      <span class="green"><b>7</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -442,7 +442,18 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="5">
+          <li class="covered" data-hits="1" data-linenumber="5">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fill_in :title, with: &#39;Something&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="6">
             
             
 
@@ -453,7 +464,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="6">
+          <li class="covered" data-hits="1" data-linenumber="7">
             <span class="hits">1</span>
             
 
@@ -464,7 +475,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="7">
+          <li class="never" data-hits="" data-linenumber="8">
             
             
 
@@ -475,18 +486,18 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="8">
+          <li class="covered" data-hits="1" data-linenumber="9">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">    expect(page).to have_content(&quot;www.something.com&quot;)</code>
+            <code class="ruby">    expect(page).to have_content(&quot;Something&quot;)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="9">
+          <li class="never" data-hits="" data-linenumber="10">
             
             
 
@@ -497,7 +508,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="10">
+          <li class="never" data-hits="" data-linenumber="11">
             
             
 
@@ -556,7 +567,7 @@
 
             
 
-            <code class="ruby">  scenario &#39;A user can see bookmarks&#39; do </code>
+            <code class="ruby">  scenario &#39;A user can see a list of their bookmark titles&#39; do </code>
           </li>
         </div>
       
@@ -589,7 +600,7 @@
 
             
 
-            <code class="ruby">    connection.exec(&quot;INSERT INTO bookmarks VALUES(1, &#39;http://www.makersacademy.com&#39;);&quot;)</code>
+            <code class="ruby">    connection.exec(&quot;INSERT INTO bookmarks(url, title) VALUES(&#39;http://www.makersacademy.com&#39;, &#39;Makers&#39;);&quot;)</code>
           </li>
         </div>
       
@@ -600,7 +611,7 @@
 
             
 
-            <code class="ruby">    connection.exec(&quot;INSERT INTO bookmarks VALUES(2, &#39;http://www.destroyallsoftware.com&#39;);&quot;)</code>
+            <code class="ruby">    connection.exec(&quot;INSERT INTO bookmarks(url, title) VALUES(&#39;http://www.destroyallsoftware.com&#39;, &#39;Destroy&#39;);&quot;)</code>
           </li>
         </div>
       
@@ -611,7 +622,7 @@
 
             
 
-            <code class="ruby">    connection.exec(&quot;INSERT INTO bookmarks VALUES(3, &#39;http://www.google.com&#39;);&quot;)</code>
+            <code class="ruby">    connection.exec(&quot;INSERT INTO bookmarks(url, title) VALUES(&#39;http://www.google.com&#39;, &#39;Google&#39;);&quot;)</code>
           </li>
         </div>
       
@@ -655,7 +666,7 @@
 
             
 
-            <code class="ruby">    expect(page).to have_content &quot;http://www.makersacademy.com&quot;</code>
+            <code class="ruby">    expect(page).to have_content &quot;Makers&quot;</code>
           </li>
         </div>
       
@@ -666,7 +677,7 @@
 
             
 
-            <code class="ruby">    expect(page).to have_content &quot;http://www.destroyallsoftware.com&quot;</code>
+            <code class="ruby">    expect(page).to have_content &quot;Destroy&quot;</code>
           </li>
         </div>
       
@@ -677,7 +688,7 @@
 
             
 
-            <code class="ruby">    expect(page).to have_content &quot;http://www.google.com&quot;</code>
+            <code class="ruby">    expect(page).to have_content &quot;Google&quot;</code>
           </li>
         </div>
       
@@ -688,12 +699,56 @@
 
             
 
-            <code class="ruby">  end</code>
+            <code class="ruby">  </code>
           </li>
         </div>
       
         <div>
           <li class="never" data-hits="" data-linenumber="15">
+            
+            
+
+            
+
+            <code class="ruby">  # scenario &#39;can click on the title to see the url&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="16">
+            
+            
+
+            
+
+            <code class="ruby">    </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="17">
+            
+            
+
+            
+
+            <code class="ruby">  # end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="18">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="19">
             
             
 
