@@ -122,6 +122,28 @@
           null
         ]
       },
+      "/Users/sergei/Documents/Makers/Challenges/Week-4/bookmark-manager/spec/features/updating_bookmark_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null
+        ]
+      },
       "/Users/sergei/Documents/Makers/Challenges/Week-4/bookmark-manager/spec/features/viewing_bookmarks_spec.rb": {
         "lines": [
           null,
@@ -141,6 +163,6 @@
         ]
       }
     },
-    "timestamp": 1634204897
+    "timestamp": 1634205300
   }
 }

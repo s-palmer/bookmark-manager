@@ -2,9 +2,9 @@
 
 The website should have the following specification:
 
-* Show a list of bookmarks
-* Add new bookmarks
-* Delete bookmarks
+* Show a list of bookmarks ✓
+* Add new bookmarks ✓
+* Delete bookmarks ✓
 * Update bookmarks
 * Comment on bookmarks
 * Tag bookmarks into categories
@@ -35,6 +35,12 @@ I want to be able to add a new bookmark.
 As a user
 So I can remove my bookmark from Bookmark Manager
 I want to delete a bookmark
+```
+
+```
+As a user
+So I can change a bookmark in Bookmark Manager
+I want to update a bookmark
 ```
 
 ## DB Set up instructions

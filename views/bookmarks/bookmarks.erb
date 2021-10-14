@@ -20,6 +20,10 @@
             <input type="hidden" name="_method" value="Delete">
             <input type="submit" value="Delete" class="delete"/>
           </form>
+          <form action="/bookmarks/<%= bookmark.id %>/edit" method="post">
+            <input type="hidden" name="_method" value="Patch">
+            <input type="submit" value="Edit" class="edit"/>
+          </form>
         </li>
       <% end %>
     </ul>
