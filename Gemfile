@@ -9,6 +9,8 @@ gem 'pg'
 gem 'sinatra'
 gem 'sinatra-contrib'
 gem 'webrick'
+gem 'rom', '~> 5.2', '>= 5.2.6'
+gem 'rom-sql', '~> 3.5'
 # gem 'launchy'
 
 group :development, :test do
@@ -16,3 +18,5 @@ group :development, :test do
   gem 'simplecov', require: false
   gem 'simplecov-console', require: false
 end
+
+gem 'rufo'
