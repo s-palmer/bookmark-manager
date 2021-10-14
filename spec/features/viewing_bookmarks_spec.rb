@@ -1,5 +1,4 @@
 # frozen_string_literal: true
-require_relative "../web_helpers_spec"
 
 feature "Viewing bookmarks" do
   scenario "A user can see a list of their bookmark titles" do

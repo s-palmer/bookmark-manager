@@ -1,4 +1,3 @@
-require_relative "../web_helpers_spec"
 
 feature "Updating bookmarks" do
   scenario "Users can update a bookmark" do

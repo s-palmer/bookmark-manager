@@ -2,7 +2,6 @@
 
 require 'bookmark'
 require 'database_helpers'
-require_relative 'web_helpers_spec'
 
 describe Bookmark do
   describe '#all' do

@@ -1,4 +1,3 @@
-require_relative "../web_helpers_spec"
 
 feature "Deleting a bookmark" do
   scenario "User can delete a bookmark" do

@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require_relative "../web_helpers_spec"
-
 feature "Adding bookmarks" do
   scenario "a user adds 1 bookmark" do
     add_test_bookmark
