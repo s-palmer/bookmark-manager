@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/conor/Ruby/Projects/Pairing/bookmark-manager/spec/bookmark_spec.rb": {
+      "/Users/sergei/Documents/Makers/Challenges/Week-4/bookmark-manager/spec/bookmark_spec.rb": {
         "lines": [
           1,
           1,
@@ -37,7 +37,7 @@
           null
         ]
       },
-      "/Users/conor/Ruby/Projects/Pairing/bookmark-manager/spec/database_helpers.rb": {
+      "/Users/sergei/Documents/Makers/Challenges/Week-4/bookmark-manager/spec/database_helpers.rb": {
         "lines": [
           1,
           null,
@@ -48,7 +48,7 @@
           null
         ]
       },
-      "/Users/conor/Ruby/Projects/Pairing/bookmark-manager/spec/features/adding_bookmarks_spec.rb": {
+      "/Users/sergei/Documents/Makers/Challenges/Week-4/bookmark-manager/spec/features/adding_bookmarks_spec.rb": {
         "lines": [
           1,
           1,
@@ -63,7 +63,7 @@
           null
         ]
       },
-      "/Users/conor/Ruby/Projects/Pairing/bookmark-manager/spec/features/viewing_bookmarks_spec.rb": {
+      "/Users/sergei/Documents/Makers/Challenges/Week-4/bookmark-manager/spec/features/viewing_bookmarks_spec.rb": {
         "lines": [
           1,
           1,
@@ -92,6 +92,6 @@
         ]
       }
     },
-    "timestamp": 1634142199
+    "timestamp": 1634197890
   }
 }
