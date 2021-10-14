@@ -69,7 +69,6 @@ input[type=submit].delete {
   margin: 4px 2px;
   cursor: pointer;
   background-color: red;
-  color: white;
 }
 
 input[type=submit].edit {
@@ -80,7 +79,16 @@ input[type=submit].edit {
   margin: 4px 2px;
   cursor: pointer;
   background-color: orange;
-  color: white;
+}
+
+input[type=submit].comment {
+  border: none;
+  border-radius: 7px;
+  padding: 10px 15px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: blue;
 }
 
 /* 
