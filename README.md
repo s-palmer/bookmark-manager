@@ -5,7 +5,7 @@ The website should have the following specification:
 * Show a list of bookmarks ✓
 * Add new bookmarks ✓
 * Delete bookmarks ✓
-* Update bookmarks
+* Update bookmarks ✓
 * Comment on bookmarks
 * Tag bookmarks into categories
 * Filter bookmarks by tag
@@ -41,6 +41,12 @@ I want to delete a bookmark
 As a user
 So I can change a bookmark in Bookmark Manager
 I want to update a bookmark
+```
+
+```
+As a user
+So that the bookmarks I save are useful
+I want to only save a valid URL
 ```
 
 ## DB Set up instructions

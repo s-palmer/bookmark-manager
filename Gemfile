@@ -20,3 +20,4 @@ group :development, :test do
 end
 
 gem 'rufo'
+gem 'sinatra-flash'
