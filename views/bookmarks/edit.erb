@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="stylesheet" href="css/app.css">
+<link rel="stylesheet" href="/public/css/app.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Raleway:wght@100&display=swap" rel="stylesheet">
@@ -11,10 +11,12 @@
   <title>Edit Bookmark</title>
 </head>
 <body>
+
+<h1>Edit your bookmark</h1>
   <form action="/bookmarks/<%= @bookmark_id %>" method="post">
   <input type="hidden" name="_method" value="patch" />
-  <input type="url" name="url" />
-  <input type="text" name="title" />
+  <input type="text" name="url" value="<%= @bookmark.url %>" />
+  <input type="text" name="title" value="<%= @bookmark.title %>" />
   <input type="submit" value="Save" />
 </form>   
 </body>
