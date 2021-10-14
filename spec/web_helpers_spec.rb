@@ -14,7 +14,7 @@ end
 
 def add_test_bookmark
   visit('/')
-  fill_in('bookmark_name', with: 'Test')
-  fill_in('bookmark_url', with: 'test.com')
+  fill_in('title', with: 'Test')
+  fill_in('url', with: 'http://test.com')
   click_button('Save')
 end

@@ -2,7 +2,7 @@
 
 require 'bookmark'
 require 'database_helpers'
-require 'web_helpers_spec'
+require_relative 'web_helpers_spec'
 
 describe Bookmark do
   describe '#all' do
@@ -22,13 +22,13 @@ describe Bookmark do
 
   describe '#create' do
     it 'creates a new bookmark' do
-      bookmark = Bookmark.create(url: 'www.test.com', title: 'Test')
+      bookmark = Bookmark.create(url: 'http://www.test.com', title: 'Test')
       persisted_data = persisted_data(id: bookmark.id)
 
       expect(bookmark).to be_a Bookmark
       expect(bookmark.id).to eq persisted_data['id']
       expect(bookmark.title).to eq 'Test'
-      expect(bookmark.url).to eq 'www.test.com'
+      expect(bookmark.url).to eq 'http://www.test.com'
     end
 
     it 'does not create a new bookmark if the URL is not valid' do
@@ -39,9 +39,9 @@ describe Bookmark do
 
   describe '#delete' do
     it 'deletes a bookmark' do
-      bookmark = Bookmark.create(url: 'www.test.com', title: 'Test')
+      bookmark = Bookmark.create(url: 'http://www.test.com', title: 'Test')
       Bookmark.delete(id: bookmark.id)
-      
+    
       expect(Bookmark.all.length).to eq 0
     end
   end
@@ -61,7 +61,6 @@ describe Bookmark do
   describe '#find' do
     it 'returns the requested bookmark object' do
       bookmark = Bookmark.create(title: 'Test', url: 'https://test.com')
-
       result = Bookmark.find(id: bookmark.id)
 
       expect(result).to be_a Bookmark

@@ -11,6 +11,9 @@
     <title>View All Bookmarks</title>
   </head>
   <body>
+    <p>
+      <%= flash[:notice] %>
+    </p>
     <h1>List of Bookmarks</h1>
     <ul>
       <% @bookmarks.each do |bookmark| %>
@@ -26,8 +29,5 @@
         </li>
       <% end %>
     </ul>
-    <p>
-      <%= flash[:notice] %>
-    </p>
   </body>
 </html>

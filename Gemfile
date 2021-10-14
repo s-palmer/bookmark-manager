@@ -9,8 +9,8 @@ gem 'pg'
 gem 'sinatra'
 gem 'sinatra-contrib'
 gem 'webrick'
-gem 'rom', '~> 5.2', '>= 5.2.6'
-gem 'rom-sql', '~> 3.5'
+# gem 'rom', '~> 5.2', '>= 5.2.6'
+# gem 'rom-sql', '~> 3.5'
 # gem 'launchy'
 
 group :development, :test do
