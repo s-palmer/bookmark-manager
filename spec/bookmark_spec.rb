@@ -1,8 +1,10 @@
-require "bookmark"
-require "database_helpers"
+# frozen_string_literal: true
+
+require 'bookmark'
+require 'database_helpers'
 
 describe Bookmark do
-  describe ".all" do
+  describe '.all' do
     it 'returns a list of bookmarks' do
       bookmark = Bookmark.create(url: 'http://www.makersacademy.com', title: 'Makers')
       Bookmark.create(url: 'http://www.destroyallsoftware.com', title: 'Destroy')
@@ -16,9 +18,9 @@ describe Bookmark do
       expect(bookmarks.first.url).to eq 'http://www.makersacademy.com'
     end
   end
-  
-  describe ".create" do
-    it "creates a new bookmark" do
+
+  describe '.create' do
+    it 'creates a new bookmark' do
       bookmark = Bookmark.create(url: 'www.test.com', title: 'Test')
       persisted_data = persisted_data(id: bookmark.id)
 
@@ -29,4 +31,3 @@ describe Bookmark do
     end
   end
 end
-

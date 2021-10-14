@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 feature 'Adding bookmarks' do
   scenario 'a user adds 1 bookmark' do
     visit('/')
@@ -6,6 +8,6 @@ feature 'Adding bookmarks' do
 
     click_button 'submit_url'
 
-    expect(page).to have_content("Something")
+    expect(page).to have_content('Something')
   end
 end
