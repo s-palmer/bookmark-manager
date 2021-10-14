@@ -2,9 +2,10 @@
 
 require 'bookmark'
 require 'database_helpers'
+require 'web_helpers_spec'
 
 describe Bookmark do
-  describe '.all' do
+  describe '#all' do
     it 'returns a list of bookmarks' do
       bookmark = Bookmark.create(url: 'http://www.makersacademy.com', title: 'Makers')
       Bookmark.create(url: 'http://www.destroyallsoftware.com', title: 'Destroy')
@@ -19,7 +20,7 @@ describe Bookmark do
     end
   end
 
-  describe '.create' do
+  describe '#create' do
     it 'creates a new bookmark' do
       bookmark = Bookmark.create(url: 'www.test.com', title: 'Test')
       persisted_data = persisted_data(id: bookmark.id)
@@ -28,6 +29,15 @@ describe Bookmark do
       expect(bookmark.id).to eq persisted_data['id']
       expect(bookmark.title).to eq 'Test'
       expect(bookmark.url).to eq 'www.test.com'
+    end
+  end
+
+  describe '#delete' do
+    it 'deletes a bookmark' do
+      bookmark = Bookmark.create(url: 'www.test.com', title: 'Test')
+      Bookmark.delete(id: bookmark.id)
+      
+      expect(Bookmark.all.length).to eq 0
     end
   end
 end

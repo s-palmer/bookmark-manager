@@ -3,6 +3,9 @@
     "coverage": {
       "/Users/sergei/Documents/Makers/Challenges/Week-4/bookmark-manager/spec/bookmark_spec.rb": {
         "lines": [
+          null,
+          null,
+          1,
           1,
           1,
           null,
@@ -32,6 +35,14 @@
           1,
           1,
           null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
           null,
           null,
           null
@@ -39,6 +50,8 @@
       },
       "/Users/sergei/Documents/Makers/Challenges/Week-4/bookmark-manager/spec/database_helpers.rb": {
         "lines": [
+          null,
+          null,
           1,
           null,
           1,
@@ -48,7 +61,48 @@
           null
         ]
       },
+      "/Users/sergei/Documents/Makers/Challenges/Week-4/bookmark-manager/spec/web_helpers_spec.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          0,
+          null
+        ]
+      },
       "/Users/sergei/Documents/Makers/Challenges/Week-4/bookmark-manager/spec/features/adding_bookmarks_spec.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/sergei/Documents/Makers/Challenges/Week-4/bookmark-manager/spec/features/deleting_bookmark_spec.rb": {
         "lines": [
           1,
           1,
@@ -57,41 +111,35 @@
           1,
           null,
           1,
-          null,
           1,
+          1,
+          null,
+          null,
+          null,
+          null,
           null,
           null
         ]
       },
       "/Users/sergei/Documents/Makers/Challenges/Week-4/bookmark-manager/spec/features/viewing_bookmarks_spec.rb": {
         "lines": [
-          1,
-          1,
-          1,
           null,
           1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          null,
-          null,
-          null,
           null,
           1,
           1,
           1,
+          1,
           null,
-          null,
-          null,
-          null,
+          1,
+          1,
+          1,
           null,
           null,
           null
         ]
       }
     },
-    "timestamp": 1634197890
+    "timestamp": 1634202598
   }
 }

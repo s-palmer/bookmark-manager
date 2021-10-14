@@ -1,12 +1,35 @@
-<h1>Bookmark Manager</h1>
-<form action="/submit" method="post">
-  <label for="url">
-    Enter a website you want to save
-    <input type="url" name='url'>
-  </label>
-  <label for="title">
-    Enter the title for this bookmark
-    <input type="text" name='title'>
-  </label>
-  <input type="submit" value="submit_url">
-</form>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark Manager App</title>
+  </head>
+  <body>
+    <h1>Bookmark Manager</h1>
+    <h2>Add a new bookmark</h2>
+    <section>
+    <form action="/submit" method="post">
+      <fieldset>
+        <label for="url">
+          Bookmark Name:
+          <input type="url" name='url'>
+        </label>
+        <label for="title">
+          Bookmark URL:
+          <input type="text" name='title'>
+        </label>
+        <input type="submit" name="submit_url" value="Save">
+      </form>
+      <form action="/bookmarks">
+        <input type="submit" name="view-all" value="View All Bookmarks" id="">
+      </fieldset>
+    </form>
+    </section>
+  </body>
+</html>
