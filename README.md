@@ -26,21 +26,7 @@ So I can remove my bookmark from Bookmark Manager
 I want to delete a bookmark
 ```
 
-![Installation](user_story_1.drawio.svg)
-
-
-## Setting up the database
-- psql postgres
-- CREATE DATABASE bookmark_manager;
-- \c bookmark_manager;
-- inside db/migrations, enter the query
-- \q to exit postgresql
-- CREATE DATABASE "bookmark_manager_test";
-- CREATE TABLE bookmarks(id SERIAL PRIMARY KEY, url VARCHAR(60));
-- run psql for both databases
-
 ## DB Set up instructions
-
 
 * Start PostgreSQL using command:
 ```
