@@ -52,11 +52,11 @@ class BookmarkManager < Sinatra::Base
   end
 
   post '/bookmarks/:id/comments' do
-    p params
-    connection = PG.connect(dbname: 'bookmark_manager_test')
-    connection.exec_params(
-      "INSERT INTO comments (text, bookmark_id) VALUES ($1, $2);",
-      [params[:comment], params[:id]])
+    # connection = PG.connect(dbname: 'bookmark_manager_test')
+    # connection.exec_params(
+    #   "INSERT INTO comments (text, bookmark_id) VALUES ($1, $2);",
+    #   [params[:comment], params[:id]])
+    Comment.create(text: params[:text], bookmark_id: params[:id])
     redirect '/bookmarks'
   end
 

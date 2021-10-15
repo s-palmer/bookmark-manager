@@ -92,15 +92,39 @@
       "/Users/sergei/Documents/Makers/Challenges/Week-4/bookmark-manager/spec/database_helpers.rb": {
         "lines": [
           null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          2,
+          2,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/sergei/Documents/Makers/Challenges/Week-4/bookmark-manager/spec/comment_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
           null,
           1,
           null,
           1,
           1,
           1,
-          null,
-          null,
           1,
+          null,
+          null,
           null
         ]
       },
@@ -223,6 +247,6 @@
         ]
       }
     },
-    "timestamp": 1634287093
+    "timestamp": 1634289368
   }
 }
