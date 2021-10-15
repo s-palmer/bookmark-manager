@@ -91,6 +91,17 @@ input[type=submit].comment {
   background-color: blue;
 }
 
+input[type=submit].tag {
+  border: none;
+  border-radius: 7px;
+  padding: 10px 15px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: coral;
+}
+
+
 /* 
 input[type=reset] {
   background-color: red;

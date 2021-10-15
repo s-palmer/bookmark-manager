@@ -26,16 +26,24 @@
           <form action="/bookmarks/<%= bookmark.id %>/edit" method="get">
             <input type="submit" value="Edit" name="edit" class="edit" />
           </form>
+          <form action="/bookmarks/<%= bookmark.id %>/tags/new" method="get">
+            <input type="submit" value="Add Tag" class="tag" name="tag"/>
+          </form>
           <form action="/bookmarks/<%= bookmark.id %>/comments/new" method="get">
             <input type="submit" value="Add Comment" class="comment" name="comment"/>
           </form>
+          <ul>
+            <%# <% bookmark.tags.each do |tag| %>
+              <%# <li><%= tag['content'] </li> %>
+            <%# <% end %> %> %> %>
+          </ul>
           <ul>
             <% bookmark.comments.each do |comment| %>
               <li><%= comment.text %></li>
             <% end %>
           </ul>
-        </li>
-      <% end %>
-    </ul>
-  </body>
-</html>
+          </li>
+          <% end %>
+        </ul>
+      </body>
+    </html>

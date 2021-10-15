@@ -55,6 +55,12 @@ So that I can make interesting notes
 I want to add a Comment to a Bookmark
 ```
 
+```
+As a user
+So that I can organise my bookmarks
+I want to add a Tag to a Bookmark
+```
+
 ## DB Set up instructions
 
 * Start PostgreSQL using command:
