@@ -6,7 +6,7 @@ The website should have the following specification:
 * Add new bookmarks ✓
 * Delete bookmarks ✓
 * Update bookmarks ✓
-* Comment on bookmarks
+* Comment on bookmarks ✓
 * Tag bookmarks into categories
 * Filter bookmarks by tag
 * Users are restricted to manage only their own bookmarks
@@ -47,6 +47,12 @@ I want to update a bookmark
 As a user
 So that the bookmarks I save are useful
 I want to only save a valid URL
+```
+
+```
+As a user
+So that I can make interesting notes
+I want to add a Comment to a Bookmark
 ```
 
 ## DB Set up instructions
