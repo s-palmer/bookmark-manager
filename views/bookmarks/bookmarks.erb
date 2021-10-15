@@ -33,7 +33,7 @@
             <input type="submit" value="Add Comment" class="comment" name="comment"/>
           </form>
           <ul>
-            <% bookmark.tags(bookmark.id).each do |tag| %>
+            <% bookmark.tags.each do |tag| %>
               <li><%= tag['content'] %> </li>
             <% end %>
           </ul>

@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require 'bookmark'
-require 'database_helpers'
+require_relative '../database_helpers'
 
 describe Bookmark do
   describe '#all' do

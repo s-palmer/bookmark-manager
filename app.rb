@@ -64,20 +64,12 @@ class BookmarkManager < Sinatra::Base
 
   post '/bookmarks/:id/tags' do
     @bookmark_id = params[:id]
-    connection = PG.connect(dbname: 'bookmark_manager_test')
-    result = connection.exec_params(
-      "INSERT INTO tags (content) VALUES ($1) RETURNING id, content;",
-      [params[:tag]]
-    )
-    connection.exec_params(
-      "INSERT INTO bookmark_tags (bookmark_id, tag_id) VALUES ($1, $2);",
-      [params[:id], result[0]['id']]
-    )
+    
     
     bookmark = Bookmark.find(id: params[:id]).tags
     p params
 
-    # Tag.create(text: params[:tag], bookmark_id: params[:id])
+    Tag.create(content: params[:tag], bookmark_id: params[:id])
     redirect '/bookmarks'
   end
 
