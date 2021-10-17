@@ -6,6 +6,7 @@ require 'sinatra/flash'
 require 'uri'
 require './lib/bookmark'
 require './lib/comment'
+require './lib/tag'
 require './database_connection_setup'
 
 class BookmarkManager < Sinatra::Base
