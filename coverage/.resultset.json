@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/tomkellett/Coding/Makers/Week4/Sergei/bookmark-manager/spec/database_connection_spec.rb": {
+      "/Users/sergei/Documents/Makers/Challenges/Week-4/bookmark-manager/spec/database_connection_spec.rb": {
         "lines": [
           1,
           null,
@@ -28,7 +28,7 @@
           null
         ]
       },
-      "/Users/tomkellett/Coding/Makers/Week4/Sergei/bookmark-manager/spec/features/adding_and_viewing_comments_spec.rb": {
+      "/Users/sergei/Documents/Makers/Challenges/Week-4/bookmark-manager/spec/features/adding_and_viewing_comments_spec.rb": {
         "lines": [
           1,
           1,
@@ -50,7 +50,7 @@
           null
         ]
       },
-      "/Users/tomkellett/Coding/Makers/Week4/Sergei/bookmark-manager/spec/features/adding_and_viewing_tags_spec.rb": {
+      "/Users/sergei/Documents/Makers/Challenges/Week-4/bookmark-manager/spec/features/adding_and_viewing_tags_spec.rb": {
         "lines": [
           1,
           1,
@@ -72,7 +72,7 @@
           null
         ]
       },
-      "/Users/tomkellett/Coding/Makers/Week4/Sergei/bookmark-manager/spec/features/adding_bookmarks_spec.rb": {
+      "/Users/sergei/Documents/Makers/Challenges/Week-4/bookmark-manager/spec/features/adding_bookmarks_spec.rb": {
         "lines": [
           null,
           null,
@@ -92,7 +92,7 @@
           null
         ]
       },
-      "/Users/tomkellett/Coding/Makers/Week4/Sergei/bookmark-manager/spec/features/deleting_bookmark_spec.rb": {
+      "/Users/sergei/Documents/Makers/Challenges/Week-4/bookmark-manager/spec/features/deleting_bookmark_spec.rb": {
         "lines": [
           null,
           1,
@@ -107,7 +107,7 @@
           null
         ]
       },
-      "/Users/tomkellett/Coding/Makers/Week4/Sergei/bookmark-manager/spec/features/updating_bookmark_spec.rb": {
+      "/Users/sergei/Documents/Makers/Challenges/Week-4/bookmark-manager/spec/features/updating_bookmark_spec.rb": {
         "lines": [
           null,
           1,
@@ -129,7 +129,7 @@
           null
         ]
       },
-      "/Users/tomkellett/Coding/Makers/Week4/Sergei/bookmark-manager/spec/features/viewing_bookmarks_spec.rb": {
+      "/Users/sergei/Documents/Makers/Challenges/Week-4/bookmark-manager/spec/features/viewing_bookmarks_spec.rb": {
         "lines": [
           null,
           null,
@@ -141,7 +141,7 @@
           null
         ]
       },
-      "/Users/tomkellett/Coding/Makers/Week4/Sergei/bookmark-manager/spec/unit/bookmark_spec.rb": {
+      "/Users/sergei/Documents/Makers/Challenges/Week-4/bookmark-manager/spec/unit/bookmark_spec.rb": {
         "lines": [
           null,
           null,
@@ -240,7 +240,7 @@
           null
         ]
       },
-      "/Users/tomkellett/Coding/Makers/Week4/Sergei/bookmark-manager/spec/database_helpers.rb": {
+      "/Users/sergei/Documents/Makers/Challenges/Week-4/bookmark-manager/spec/database_helpers.rb": {
         "lines": [
           null,
           1,
@@ -255,7 +255,7 @@
           null
         ]
       },
-      "/Users/tomkellett/Coding/Makers/Week4/Sergei/bookmark-manager/spec/unit/comment_spec.rb": {
+      "/Users/sergei/Documents/Makers/Challenges/Week-4/bookmark-manager/spec/unit/comment_spec.rb": {
         "lines": [
           1,
           1,
@@ -295,7 +295,7 @@
           null
         ]
       },
-      "/Users/tomkellett/Coding/Makers/Week4/Sergei/bookmark-manager/spec/unit/tags_spec.rb": {
+      "/Users/sergei/Documents/Makers/Challenges/Week-4/bookmark-manager/spec/unit/tags_spec.rb": {
         "lines": [
           1,
           1,
@@ -312,39 +312,12 @@
           1,
           1,
           1,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/tomkellett/Coding/Makers/Week4/Sergei/bookmark-manager/lib/tag.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          1,
-          2,
-          2,
-          null,
-          null,
-          1,
-          2,
-          null,
-          null,
-          null,
-          2,
-          null,
-          null,
-          null,
-          2,
-          null,
-          null,
           null,
           null,
           null
         ]
       }
     },
-    "timestamp": 1634314077
+    "timestamp": 1634481246
   }
 }
